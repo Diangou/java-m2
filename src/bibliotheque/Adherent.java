@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Lecteur {
+public class Adherent {
     private static int CPT = 1;
 
     int id;
@@ -13,7 +13,7 @@ public class Lecteur {
     EtatLivre etat = EtatLivre.LIBRE;
     List<Livre> livres;
 
-    public Lecteur( String prenom) {
+    public Adherent( String prenom) {
         this.prenom = prenom;
         this.livres = new ArrayList<>();
     }

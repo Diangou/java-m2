@@ -29,7 +29,7 @@ public class Etagere {
             }
             livres.stream()
                     .filter(livre -> livre.titre != null)
-                    .forEach(livre -> livre.setEtagere(this))
+                    .forEach(livre -> livre.setEtagere(this));
 
         }
         else {

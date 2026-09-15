@@ -10,11 +10,13 @@ public class Adherent {
     int id;
     String nom;
     String prenom;
+    Carte carte;
     EtatLivre etat = EtatLivre.LIBRE;
     List<Livre> livres;
 
-    public Adherent( String prenom) {
+    public Adherent( String prenom, Carte carte) {
         this.prenom = prenom;
+        this.carte = carte;
         this.livres = new ArrayList<>();
     }
 
@@ -42,5 +44,9 @@ public class Adherent {
             livres.remove(livre);
             livre.voler();
         }
+    }
+
+    public void volCarte() {
+        this.carte.setEtat(EtatCarte.VOL);
     }
 }

@@ -10,22 +10,30 @@ public class Main {
         var tolkien = new Auteur("Tolkien", "John");
 
         var miserables = new Livre("Les miserables", victor, "tragedie", "Gallimard");
-        var frankenstein = new Livre("Frankenstein", mary, "Horreur", "Flamarion")
+        var frankenstein = new Livre("Frankenstein", mary, "Horreur", "Flamarion");
         var seigneurAnneaux = new Livre ("Le Seigneur des Anneaux", tolkien, "Fantastique", "Flamarion");
 
         var etagere = new Etagere(miserables, frankenstein, seigneurAnneaux);
 
-        var talyha = new Adherent( "Talyha");
-        var pierric = new Adherent("Pierric");
-        var rafael = new Adherent("Rafael");
+        var carte1 = new Carte("XSJD6SG7");
+        var carte2 = new Carte("XKSD3SG2");
+        var carte3 = new Carte("XMSV3SG9");
+
+        var talyha = new Adherent( "Talyha", carte1);
+        var pierric = new Adherent("Pierric", carte2);
+        var rafael = new Adherent("Rafael", carte3);
+
+
 
         rafael.vol(miserables);
         pierric.rendre(seigneurAnneaux);
         talyha.perdre(frankenstein);
+        talyha.volCarte();
 
         System.out.println(miserables.getEtat());
         System.out.println(seigneurAnneaux.getEtat());
         System.out.println(frankenstein.getEtat());
+        System.out.println(carte1.getEtat());
 
     }
 }

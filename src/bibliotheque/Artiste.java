@@ -18,7 +18,6 @@ public class Artiste {
         this.id = idAuteur++;
         this.nom = nom;
         this.prenom = prenom;
-
     }
 
     @Override
@@ -26,8 +25,7 @@ public class Artiste {
         return "Id: " + id + " Nom: " + nom + " Prenom: " + prenom;
     }
 
-    private CD produire(String titre, String genre, String artiste, int annee){
-        return new CD(titre, this, genre, artiste, annee );
-    }
+    /*private CD produire(String titre, String genre, int annee){return new CD(titre, this, genre, annee );
+    }*/
 
 }

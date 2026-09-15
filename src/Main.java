@@ -1,7 +1,4 @@
-import bibliotheque.Auteur;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-import bibliotheque.Etagere;
-import bibliotheque.Adherent;
-import bibliotheque.Livre;
+import bibliotheque.*;
 
 //
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.

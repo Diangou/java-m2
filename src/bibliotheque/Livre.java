@@ -7,7 +7,6 @@ public class Livre implements Document {
     int id;
     String titre;
     String genre;
-    boolean estEmprunte;
     EtatLivre etat = EtatLivre.LIBRE;
     String edition;
     Auteur auteur;
@@ -19,7 +18,6 @@ public class Livre implements Document {
         this.auteur = auteur;
         this.genre = genre;
         this.edition = edition;
-        this.estEmprunte = false;
     }
 
     public void emprunter(){

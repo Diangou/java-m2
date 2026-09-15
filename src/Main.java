@@ -1,6 +1,6 @@
 import bibliotheque.Auteur;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 import bibliotheque.Etagere;
-import bibliotheque.Lecteur;
+import bibliotheque.Adherent;
 import bibliotheque.Livre;
 
 //
@@ -18,9 +18,9 @@ public class Main {
 
         var etagere = new Etagere(miserables, frankenstein, seigneurAnneaux);
 
-        var talyha = new Lecteur( "Talyha");
-        var pierric = new Lecteur("Pierric");
-        var rafael = new Lecteur("Rafael");
+        var talyha = new Adherent( "Talyha");
+        var pierric = new Adherent("Pierric");
+        var rafael = new Adherent("Rafael");
 
         rafael.vol(miserables);
         pierric.rendre(seigneurAnneaux);

@@ -21,6 +21,14 @@ public class CD implements Document{
         this.annee = annee;
     }
 
+    public CD(String titre, Artiste artiste, String genre, int annee) {
+        this.id = CPT++;
+        this.titre = titre;
+        this.artiste = artiste;
+        this.genre = genre;
+        this.annee = annee;
+    }
+
     @Override
     public void emprunter(){
         setEtat(EtatCD.EMPRUNTE);

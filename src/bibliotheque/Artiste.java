@@ -2,7 +2,7 @@ package bibliotheque;
 
 public class Artiste {
 
-    private static int idAuteur;
+    private static int idArtiste;
     int id;
     String nom;
     String prenom;
@@ -15,7 +15,7 @@ public class Artiste {
     }
 
     public Artiste(String nom, String prenom) {
-        this.id = idAuteur++;
+        this.id = idArtiste++;
         this.nom = nom;
         this.prenom = prenom;
     }
@@ -25,7 +25,6 @@ public class Artiste {
         return "Id: " + id + " Nom: " + nom + " Prenom: " + prenom;
     }
 
-    /*private CD produire(String titre, String genre, int annee){return new CD(titre, this, genre, annee );
-    }*/
+    private CD produire(String titre, String genre, int annee) {return new CD(titre, this, genre, annee);}
 
 }

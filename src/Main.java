@@ -10,7 +10,7 @@ public class Main {
         var tolkien = new Auteur("Tolkien", "John");
 
         var miserables = new Livre("Les miserables", victor, "tragedie", "Gallimard");
-        var frankenstein = new Livre("Frankenstein", mary, "Horreur", "Flamarion")
+        var frankenstein = new Livre("Frankenstein", mary, "Horreur", "Flamarion");
         var seigneurAnneaux = new Livre ("Le Seigneur des Anneaux", tolkien, "Fantastique", "Flamarion");
 
         var etagere = new Etagere(miserables, frankenstein, seigneurAnneaux);

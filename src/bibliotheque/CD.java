@@ -8,19 +8,19 @@ public class CD implements Document{
     String titre;
     String genre;
     EtatCD etat = EtatCD.LIBRE;
-    String artiste;
+    Artiste artiste;
     int annee;
     Etagere etagere;
 
 
-    public CD(int id, String title, String genre, Artiste artiste, int annee) {
+    public CD(int id, String titre, String genre, Artiste artiste, int annee) {
         this.id = CPT++;
-        this.titre = titre;
         this.artiste = artiste;
+        this.titre = titre;
         this.genre = genre;
         this.annee = annee;
     }
-    
+
     @Override
     public void emprunter(){
         setEtat(EtatCD.EMPRUNTE);
